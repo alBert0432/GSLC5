@@ -11,7 +11,7 @@
                     <input type="submit" id="submit-btn" />
                 </form>
 
-                @switch($hari = $_GET["horizon"])
+                @switch($gtr = $_GET["horizon"])
                     @case('Integra Type-R')
                         <h3>Horizon Car :</h3>
                         <img class="image" src="https://static.wikia.nocookie.net/70d14bbe-adb6-449c-bfd8-807c6bd3f7e4" height=450px

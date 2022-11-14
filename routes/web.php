@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,8 +15,4 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/dreamCar', function () {
-    return view('dreamCar', [
-        "title" => "DreamCar"
-    ]);
-});
+Route::get('/dreamCar', [PostController::class, 'index']);
